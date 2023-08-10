@@ -18,7 +18,7 @@ class Comment
     private ?string $author = null;
 
     #[ORM\Column(type: Types::TEXT)]
-    private ?string $test = null;
+    private ?string $text = null;
 
     #[ORM\Column(length: 255)]
     private ?string $email = null;
@@ -50,14 +50,14 @@ class Comment
         return $this;
     }
 
-    public function getTest(): ?string
+    public function getText(): ?string
     {
-        return $this->test;
+        return $this->text;
     }
 
-    public function setTest(string $test): static
+    public function setText(string $text): static
     {
-        $this->test = $test;
+        $this->text = $text;
 
         return $this;
     }
@@ -96,6 +96,7 @@ class Comment
         $this->conference = $conference;
 
         return $this;
+
     }
 
     public function getPhotoFilename(): ?string
