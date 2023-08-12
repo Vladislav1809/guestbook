@@ -19,6 +19,6 @@
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
 
-###> phpstorm ###
+
 .idea/
-###< phpstorm ###
+/public/uploads
